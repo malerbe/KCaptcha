@@ -1,0 +1,6 @@
+README.md
+setup.py
+kcaptcha.egg-info/PKG-INFO
+kcaptcha.egg-info/SOURCES.txt
+kcaptcha.egg-info/dependency_links.txt
+kcaptcha.egg-info/top_level.txt

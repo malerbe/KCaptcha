@@ -16,5 +16,4 @@ import os
 from tqdm.auto import tqdm
 import sys
 
-
-
+import kcaptcha
