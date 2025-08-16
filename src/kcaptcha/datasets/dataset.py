@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import random
 
 class ImageCaptchaDataset(Dataset):
-    def __init__(self, root, img_h=32, img_w=128, vocab='0123456789', transform=None, train=True, seed=42):
+    def __init__(self, root, img_h=32, img_w=128, vocab='-0123456789', transform=None, train=True, seed=42):
         """
         Args:
             folder (str): chemin du dossier contenant les images
@@ -49,8 +49,6 @@ class ImageCaptchaDataset(Dataset):
             transforms.Normalize(mean=[0.5], std=[0.5]),
         ])
 
-        print("TRANSFORM: ", self.transform)
-
     def __getitem__(self, idx):
         file = self.files[idx]
         img_path = os.path.join(self.folder, file)
@@ -67,7 +65,7 @@ class ImageCaptchaDataset(Dataset):
         label = [self.vocab2idx[c] for c in label_str]
         label = torch.tensor(label, dtype=torch.long)
         
-        return img, label
+        return img, label, len(label)
 
     def __len__(self):
         return len(self.files)

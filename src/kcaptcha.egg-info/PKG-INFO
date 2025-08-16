@@ -10,6 +10,8 @@ Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
 
 # KCaptcha
 My KCaptcha project aims to make a method to read textual captchas that automatically adapts to a new dataset

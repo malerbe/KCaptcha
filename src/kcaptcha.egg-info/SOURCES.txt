@@ -1,8 +1,13 @@
+LICENSE
 README.md
 pyproject.toml
 src/kcaptcha/__init__.py
-src/kcaptcha/transformers.py
 src/kcaptcha.egg-info/PKG-INFO
 src/kcaptcha.egg-info/SOURCES.txt
 src/kcaptcha.egg-info/dependency_links.txt
 src/kcaptcha.egg-info/top_level.txt
+src/kcaptcha/datasets/__init__.py
+src/kcaptcha/datasets/dataset.py
+src/kcaptcha/models/__init__.py
+src/kcaptcha/models/transformers.py
+src/kcaptcha/scripts/quick_train_test.py
